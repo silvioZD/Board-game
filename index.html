@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Project 6 game</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="style.css">
+			<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head>
+	<body>
+		<div class="intro">
+			<h1 id="welcome">Welcome</h1>
+			<h1 id="game_over">Game over</h1>
+			<button id="play">Play game</button>
+		</div>
+		<div class="gameBoard">
+		<div id="player1-controls" class="player-controls">			
+		<div class="player-name">
+		<h1 class="playerName" id="player1">Player 1</h1><br>
+		<img id="homer" src="images/player1.png" alt="homer">	
+		</div>
+		<div class="player-status">
+		<div class="player-hp"></div>
+		<p id="p_health">HEALTH</p>
+		<div class="progress">
+    	<div class="progress-bar" id="health" role="progressbar" value="100" valuemin="0" valuemax="100" style="width:100%"></div>
+    </div> 
+	<p id="p_weapon">WEAPON</p>
+	<div class="player-weapon-icon"></div>
+	<div id="combat-buttons"><br>
+	<button type="button" name="atack" class="btn-combat">Atack</button>
+	<br><br>
+	<div id="currentPlayer"></div>
+	</div>
+	</div>
+	</div>
+	<div id="board"></div>
+	<div id="player2-controls" class="player-controls">
+	<div class="player-name">
+	<h1 class="playerName">Player 2</h1><br>
+	<img id="bart" src="images/player2.png" width="auto" height="125px" alt="bart">			
+	</div>
+	<div class="player-status">
+	<div class="player-hp"></div>
+	<p id="p_health">HEALTH</p>
+	<div class="progress">
+    <div class="progress-bar" id="health" role="progressbar" valuenow="100" valuemin="0" valuemax="100" style="width:100%"></div>
+    </div> 	 
+	<p id="p_weapon">WEAPON</p>
+	<div class="player-weapon-icon"></div>
+	<div id="combat-buttons"><br>	    
+	<button type="button" name="defend" class="btn-combat">Defend</button>
+	</div>
+	</div>
+	</div>
+	</div>
+	<audio id="homer1" src="sounds/Homer1.mp3"></audio>
+	<audio id="move" src="sounds/Move.mp3"></audio>
+	<audio id="bart1" src="sounds/Bart1.mp3"></audio>
+	<audio id="bart2" src="sounds/Bart2.mp3"></audio>
+	<audio id="start" src="sounds/Start.mp3"></audio>
+	<audio id="playG" src="sounds/Play.mp3"></audio>
+	<audio id="fight" src="sounds/Fight.ogg"></audio>
+	<script src="javascript.js"></script>
+	</body>
+</html>

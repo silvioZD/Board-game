@@ -1,0 +1,210 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background-color: white;
+	font-family: sans-serif;
+	color:black;
+}
+#board{
+	margin-left:170px;
+	width: 1000px;
+	height: 650px;
+	background-color: white;
+}
+.gameBoard{
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 80%;
+}
+.intro{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("images/intro.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.intro button{
+	position: relative;
+	display: block;
+	margin: 30px auto;
+	padding: 12px 24px;
+	border-width: 0;
+	outline: none;
+	border-right: 2px;
+	box-shadow: 0 1px 4px rgba(0,0,0, .6);
+	background-color: #1565c0;
+	color: #e3f2fd;
+	transition: background-color .3s, box-shadow .3s;
+	cursor:pointer;
+	border-radius: 10px;
+}
+#player1-controls{
+	position: absolute;
+	left: 20px;
+	top: 0;	
+}
+#player2-controls{
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+
+#combat-buttons button{
+	display: none;
+	width: 100px;
+	height: 70px;
+	border : 3px solid blue;
+	border-radius: 8px;
+	outline: none;
+	color: black;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 18px;
+}
+#combat-buttons button:hover{
+  background-color: blue;
+  color : white;
+}
+.row{
+	width: 1000px;
+	height: 65px;
+	margin: 0;
+}
+.cell{
+	display: inline-block;
+	box-sizing: border-box;
+	border: 1px solid #1f2123;
+	background-image: url("images/grass.png");
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 65px;
+	margin: 0;
+}
+.cell:hover{
+	border: 2px solid red;
+}
+
+.cell-not-accessible{
+	background-image: url("images/mountain.png");
+	background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.cell-weapon-3{
+	background-image: url("images/hammer.png");
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+.cell-weapon-4{
+	background-image: url("images/slingshot.png");
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+.cell-weapon-5{
+	background-image: url("images/revolver.png");
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+.cell-weapon-6{
+	background-image: url("images/gun.png");
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+.cell-player-1{
+	background-color: #21C8ED;
+	background-image: url("images/homer.png");
+	background-repeat: no-repeat;
+	background-position: top;	
+}
+.cell-player-2{
+	background-color: #01541E;
+	background-image: url("images/bart.png");
+	background-repeat: no-repeat;
+    background-position: top;
+}
+.cell-movement{
+	border:3px solid blue;
+	border-radius: 8px;
+}
+#currentPlayer{
+	font-family: 'Permanent Marker', cursive;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 25px;
+}
+#currentPlayer p{
+	margin: 0;
+	padding-bottom: 7px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+#currentPlayer p span{
+	color:red;
+	font-size:18px;
+}
+.winner{
+	display: block;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    background-color: #21C8ED;
+    border-radius: 8px;
+}
+.winner p span{
+	font-family: 'Permanent Marker', cursive;
+	background-color: #21C8ED;
+	margin-left:55px;	
+}
+.player-item-icon{
+	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+	margin-right: 25px;
+	border: solid 3px #1f2123;
+}
+.player-weapon-icon{
+	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+	margin-right: 25px;
+	border: solid 3px #1f2123;
+}
+.player-controls{
+	margin-top: 30px;
+}
+.player-name{
+	display: block;
+	margin-bottom: 50px;
+}
+.player-name img{
+	margin-right: 25px;
+}
+.player-name h1{
+	font-family: 'Permanent Marker', cursive;
+	margin: 0;
+}
+.player-item-specs{
+	margin: auto;	
+	line-height: 50px;	
+}
+#welcome {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 48px;
+}
+#game_over{
+	display:none;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 48px;
+}
+#p_health, #p_weapon{
+	font-weight: bold;
+	font-family: 'Permanent Marker', cursive;
+}
+
+
